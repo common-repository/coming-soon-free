@@ -1,0 +1,74 @@
+* { margin: 0; padding: 0; }
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: arial, serif;
+    text-shadow: #000 1px 1px;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.page {
+    padding: 40px 5%;
+    width: 90%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000 no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+.left { float: left; width: 450px; }
+.right { float: right; width: 450px; }
+.clear { clear: both; }
+.left.no-map { float: none; margin: 0 auto; }
+
+h1 { font-size: 4em; margin-bottom: 30px; text-align: center; text-shadow: #000 5px 5px; }
+h2 { font: bold italic small-caps 3em Verdana, Geneva, sans-serif; margin-bottom: 40px; text-align: center; text-shadow: #000 5px 5px; }
+p { margin: 15px 0; }
+.subtitle { font-size: 1.4em; text-align: center; text-shadow: #000 2px 2px; }
+.social { font-size: 2em; text-align: center; margin-top: 15px; }
+.social:empty { margin-top: 0; }
+.social a + a { margin-left: 1em; }
+.social a:hover { color: #ddd; }
+a { color: #fff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+#footer { font-size: 13px; margin-top: 40px; text-align: center; }
+#footer a + a { border-left: 1px solid; padding-left: 5px; margin-left: 1px; }
+#logo { text-align: center; }
+#wrap { margin: 30px auto 0; padding-top: 40px; width: 960px; max-width: 100%; }
+#map { height: 300px; text-shadow: none; }
+#map, form { width: 100%; max-width: 450px; margin: 0 auto; }
+input { font-size: 16px; padding: 5px; border: 1px solid #adadad; border-radius: 0; }
+input:focus, input:hover { border-color: #8cbfeb; }
+input[type=email] { width: 100%; }
+input[type=submit] { padding: 5px 10px; background: #e1e1e1; cursor: pointer; -webkit-appearance: none; }
+input[type=submit]:hover { background: #e5f1fb; }
+.fright { float: right; margin-left: 5px; }
+.fleft { overflow: hidden; }
+.name, .spinner { display: none; }
+.error { color: pink; margin-top: 5px; }
+.success { color: lightgreen; }
+
+.gm-style .gm-style-iw { color: rgb(86, 86, 86); line-height: 1.5; }
+.gm-style .gm-style-iw strong { font-size: 15px; }
+.gm-style .gm-style-iw a { color: blue; }
+
+@media (max-width: 1000px) {
+    .page { padding: 30px 5%; }
+    h1 { font-size: 3em; }
+    h2 { font-size: 2em; }
+    #wrap { padding-top: 10px; }
+    .left, .right { max-width: 100%; float: none; margin: 0 auto; }
+    .left { margin-bottom: 30px; }
+}
